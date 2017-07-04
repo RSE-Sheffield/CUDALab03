@@ -146,7 +146,7 @@ int main(void) {
 
     //Exercise 2.2) generate a image from the sphere data (using constant cache)
     //cudaEventRecord(start, 0);
-    //ray_trace_const << <blocksPerGrid, threadsPerBlock >> >(???);
+    //ray_trace_constant << <blocksPerGrid, threadsPerBlock >> >(???);
     //cudaEventRecord(stop, 0);
     //cudaEventSynchronize(stop);
     //cudaEventElapsedTime(&timing_data.z, start, stop);
