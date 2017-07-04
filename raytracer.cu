@@ -141,7 +141,7 @@ int main(void) {
     //ray_trace_read_only << <blocksPerGrid, threadsPerBlock >> >(???);
     //cudaEventRecord(stop, 0);
     //cudaEventSynchronize(stop);
-    //cudaEventElapsedTime(&timing_data[i].y, start, stop);
+    //cudaEventElapsedTime(&timing_data.y, start, stop);
     //checkCUDAError("kernel (read-only)");
 
     //Exercise 2.2) generate a image from the sphere data (using constant cache)
@@ -149,7 +149,7 @@ int main(void) {
     //ray_trace_const << <blocksPerGrid, threadsPerBlock >> >(???);
     //cudaEventRecord(stop, 0);
     //cudaEventSynchronize(stop);
-    //cudaEventElapsedTime(&timing_data[i].z, start, stop);
+    //cudaEventElapsedTime(&timing_data.z, start, stop);
     //checkCUDAError("kernel (const)");
 
 	// copy the image back from the GPU for output to file
